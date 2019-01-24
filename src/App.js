@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import axios from 'axios';
 
 // testing with github graphQL API
@@ -9,13 +10,29 @@ const axiosGithubGraphQL = axios.create({
   }
 })
 
-const TITLE = 'El Cafe';
+// styled components
+const Title = styled.h1`
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Major Mono Display', monospace;
+`;
+const Content = styled.p`
+  text-align: center;
+`;
+
+const Subtitle = styled.p`
+  font-style: italic;
+  text-align: center;
+  color: darkgray;
+`;
 
 class App extends Component {
   render() {
     return (
       <div>
-       <h1>{TITLE}</h1>
+       <Title>El Cafe</Title>
+       <Subtitle>An easy way to fill your cup every day.</Subtitle>
+       <Content>Menu</Content>
       </div>
     );
   }
