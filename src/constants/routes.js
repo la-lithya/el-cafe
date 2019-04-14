@@ -1,14 +1,14 @@
-const LANDING = '/';
-const SIGN_UP = '/signup';
-const SIGN_IN = '/signin';
-const HOME = '/home';
-const ACCOUNT = '/account';
-const ADMIN = '/admin';
+export const MAIN = '/';
+export const SIGN_UP = '/signup';
+export const SIGN_IN = '/signin';
+export const HOME = '/home';
+export const ACCOUNT = '/account';
+export const ADMIN = '/admin';
 export const PASSWORD_FORGET = '/pw-forget';
 
 export const NAVIGATION_ROUTES = [{
-  linkName: 'Landing',
-  link: LANDING
+  linkName: 'Home',
+  link: HOME
 }, {
   linkName: 'Sign Up',
   link: SIGN_UP
@@ -16,9 +16,6 @@ export const NAVIGATION_ROUTES = [{
 {
   linkName: 'Sign In',
   link: SIGN_IN
-}, {
-  linkName: 'Home',
-  link: HOME
 }, {
   linkName: 'Account',
   link: ACCOUNT
