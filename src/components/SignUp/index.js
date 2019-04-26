@@ -10,6 +10,14 @@ import styles from 'styled-components';
 const Message = styles.p`
   margin: 10px;
 `;
+
+export const SignUpLink = () => {
+  return (
+    <Message>
+      Don't have an account? <Link to={SIGN_UP}>Sign Up</Link>
+    </Message>
+  )
+};
 class SignUp extends Component {
   state = {
     username: '',
@@ -98,9 +106,7 @@ class SignUp extends Component {
 
         {error && <p>{error.message}</p>}
         </Form>
-        <Message>
-        Don't have an account? <Link to={SIGN_UP}>Sign Up</Link>
-      </Message>
+        <SignUpLink />
       </Container>
     )
   }
